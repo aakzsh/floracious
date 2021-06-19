@@ -4,9 +4,11 @@ import 'package:floracious/search.dart';
 import 'package:flutter/material.dart';
 import 'arView.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+void main() {
+  runApp(MyApp());
+}
 
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
