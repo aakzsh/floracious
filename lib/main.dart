@@ -70,7 +70,12 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           )),
                       InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Reminder()));
+                          },
                           child: Container(
                             decoration: BoxDecoration(
                                 color: Colors.white,
