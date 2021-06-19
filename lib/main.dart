@@ -50,7 +50,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
                       InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ArView()));
+                          },
                           child: Container(
                             decoration: BoxDecoration(
                                 color: Colors.white,
@@ -59,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             width: 100,
                             child: Center(
                               child: Icon(
-                                Icons.send_to_mobile_rounded,
+                                Icons.message,
                                 size: 50,
                               ),
                             ),
@@ -86,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Search()));
+                                    builder: (context) => ArView()));
                           },
                           child: Container(
                             decoration: BoxDecoration(
