@@ -54,10 +54,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: <Widget>[
                       InkWell(
                           onTap: () {
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //         builder: (context) => ()));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ArView()));
                           },
                           child: Container(
                             decoration: BoxDecoration(
@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             width: 100,
                             child: Center(
                               child: Icon(
-                                Icons.send_to_mobile_rounded,
+                                Icons.message,
                                 size: 50,
                               ),
                             ),
