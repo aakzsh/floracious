@@ -41,7 +41,6 @@ class _SearchState extends State<Search> {
   }
 
   Widget build(BuildContext context) {
-
     final double h = MediaQuery.of(context).size.height;
     final double w = MediaQuery.of(context).size.width;
     weather();
