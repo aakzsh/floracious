@@ -42,8 +42,9 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-
-          <meta-data android:name="com.google.ar.core" />
-
+        <meta-data android:name="com.google.ar.core" />
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 </manifest>
