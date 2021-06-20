@@ -1,3 +1,4 @@
+import 'package:floracious/arView.dart';
 import 'package:floracious/compass.dart';
 import 'package:floracious/reminder.dart';
 import 'package:floracious/search.dart';
