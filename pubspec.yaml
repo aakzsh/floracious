@@ -27,6 +27,9 @@ dependencies:
   permission_handler:
   weather: ^2.0.1
   geolocator:
+  flutter_local_notifications: ^5.0.0+4
+  intl: ^0.17.0
+  shared_preferences: ^2.0.6
 
 
   # The following adds the Cupertino Icons font to your application.

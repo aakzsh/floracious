@@ -66,11 +66,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 100,
                             width: 100,
                             child: Center(
-                              child: Icon(
-                                Icons.send_to_mobile_rounded,
-                                size: 50,
-                              ),
-                            ),
+                                child: Image.asset(
+                              "assets/aricon.png",
+                              height: 50,
+                            )),
                           )),
                       InkWell(
                           onTap: () {
@@ -125,7 +124,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 100,
                             width: 100,
                             child: Center(
-                              child: Icon(Icons.directions, size: 50),
+                              child: Image.asset(
+                                "assets/compasslol.png",
+                                height: 50,
+                              ),
                             ),
                           ))
                     ],

@@ -25,13 +25,13 @@ class _SearchState extends State<Search> {
   weather() async {
     Weather weather = await ws.currentWeatherByLocation(
         position.latitude, position.longitude);
-    // setState(() {
-    //   citylol = weather.areaName;
-    //   templol = weather.temperature.celsius;
-    //   temp = templol;
-    //   city = citylol;
-    // });
-    // super.dispose();
+    setState(() {
+      citylol = weather.areaName;
+      templol = weather.temperature.celsius;
+      temp = templol;
+      city = citylol;
+    });
+    super.dispose();
   }
 
   @override
