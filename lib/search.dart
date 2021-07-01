@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
+// import 'package:geolocator/geolocator.dart';
 import 'package:weather/weather.dart';
 import 'main.dart';
 import 'dart:math';
@@ -20,7 +20,7 @@ var rng = new Random();
 class _SearchState extends State<Search> {
   String key = '856822fd8e22db5e1ba48c0e7d69844a';
   WeatherFactory ws;
-  List<Weather> _data = [];
+  // List<Weather> _data = [];
   double lat, lon;
   weather() async {
     Weather weather = await ws.currentWeatherByLocation(
@@ -42,7 +42,7 @@ class _SearchState extends State<Search> {
 
   Widget build(BuildContext context) {
     final double h = MediaQuery.of(context).size.height;
-    final double w = MediaQuery.of(context).size.width;
+    // final double w = MediaQuery.of(context).size.width;
     weather();
 
     return Scaffold(

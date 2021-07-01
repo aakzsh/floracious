@@ -35,13 +35,13 @@ class _ReminderState extends State<Reminder> {
 
   void loadTimeInfo() async {
     final SharedPreferences prefs = await _prefs;
-    final savedNumber = await prefs.getStringList("reminder").toList() ?? [];
+    final savedNumber = prefs.getStringList("reminder").toList() ?? [];
 
     // print(savedNumber);
     for (var i = 0; i < savedNumber.length; i++) {
       var m = savedNumber[i];
       var formatstr = DateTime.parse(m);
-      var month = DateFormat().add_yMMMM().format(formatstr);
+      // var month = DateFormat().add_yMMMM().format(formatstr);
       var time = DateFormat().add_jm().format(formatstr).toString();
       // print(month);
       // print(time);

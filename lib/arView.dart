@@ -1,13 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:webview_flutter/webview_flutter.dart';
+import 'package:permission_handler/permission_handler.dart';
 
-class ARView extends StatefulWidget {
+class ArView extends StatefulWidget {
   @override
-  _ARViewState createState() => _ARViewState();
+  _ArViewState createState() => _ArViewState();
 }
 
-class _ARViewState extends State<ARView> {
+class _ArViewState extends State<ArView> {
+  func() async {
+    var status = await Permission.camera.status;
+    if (status.isDenied) {
+      print("pain");
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+        body: Container(
+      child: WebView(
+        initialUrl: 'https://console.echoar.xyz/arjs?key=misty-boat-6649',
+        javascriptMode: JavascriptMode.unrestricted,
+      ),
+    ));
   }
 }

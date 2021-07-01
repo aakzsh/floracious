@@ -24,12 +24,15 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_compass: ^0.4.1
-  permission_handler:
+  permission_handler: ^8.1.1
   weather: ^2.0.1
   geolocator:
   flutter_local_notifications: ^5.0.0+4
   intl: ^0.17.0
   shared_preferences: ^2.0.6
+  flutter_3d_obj:
+  webview_flutter: ^2.0.9
+  youtube_player_flutter: ^8.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -37,6 +40,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
+  echoar_package: ^0.0.2
   flutter_test:
     sdk: flutter
 

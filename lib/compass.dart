@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_compass/flutter_compass.dart';
 import 'dart:math'; // to calculate angle
-import 'package:flutter/services.dart'; // since we use device resources
+// import 'package:flutter/services.dart'; // since we use device resources
 
 class Compass extends StatefulWidget {
   //since the direction keeps changing, so should the angle and the compass pointer, thus we use STFUL widget

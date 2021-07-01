@@ -1,6 +1,8 @@
+import 'package:floracious/arView.dart';
 import 'package:floracious/compass.dart';
 import 'package:floracious/reminder.dart';
 import 'package:floracious/search.dart';
+import 'package:floracious/sus.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 
@@ -35,6 +37,20 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: <Widget>[
+                Padding(
+                    padding: EdgeInsets.all(20),
+                    child: MaterialButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Sus()));
+                      },
+                      child: Text("Learn Gardening!"),
+                    )),
+              ],
+            ),
             Image.asset(
               "assets/logo.png",
               height: 90,
@@ -54,10 +70,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: <Widget>[
                       InkWell(
                           onTap: () {
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //         builder: (context) => ()));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ArView()));
                           },
                           child: Container(
                             decoration: BoxDecoration(
